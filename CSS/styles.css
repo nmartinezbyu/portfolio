@@ -1,17 +1,9 @@
-#pageTitle {
-    font-size: 36px;
-    color: orange;
-}
-
-#pageSubTitle {
-    color: orange;
-}
 
 #pageBody {
-    background-color: black;
     color: white;
-    padding: 20px;
     margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .header {
@@ -50,4 +42,134 @@
 .flexColumn {
     padding: 5px;
     width: 50%;
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+}
+
+.banner-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+  
+.banner {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social,
+.logo,
+.subscribe {
+}
+
+.infoContainer {
+    padding: 10px;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 400px) {
+    #pageBody {
+      background-color: #F09A9D; /* Red */
+    }
+
+    .photo-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pageTitle {
+        font-size: 36px;
+        text-align: center;
+        color: black;
+    }
+    
+    #pageSubTitle {
+        text-align: center;
+        color: black;
+    }
+
+    .dexterImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+  
+/* Tablet Styles */
+@media (min-width: 401px) and (max-width: 960px) {
+    #pageBody {
+        background-color: #F5CF8E; /* Yellow */
+    }
+
+    .photo-grid {
+        width: 950px;
+        display: flex;
+        justify-content: center;    /* Change this */
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pageTitle {
+        font-size: 36px;
+        text-align: center;
+        color: black;
+    }
+    
+    #pageSubTitle {
+        text-align: center;
+        color: black;
+    }
+
+    .dexterImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+}
+
+/* Desktop Styles */
+@media (min-width: 961px) {
+    #pageBody {
+      background-color: black; /* Black */
+    }
+
+    .photo-grid {
+        width: 950px;
+        display: flex;
+        justify-content: center;    /* Change this */
+        flex-wrap: wrap;
+    }
+
+    #pageTitle {
+        font-size: 36px;
+        color: orange;
+    }
+    
+    #pageSubTitle {
+        color: orange;
+    }
+
 }

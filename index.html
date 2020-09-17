@@ -3,6 +3,7 @@
   <head>
     <title>Norberto Martinez</title>
     <link rel='stylesheet' href='./CSS/styles.css'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body id="pageBody">
     <ul class="header">
@@ -10,16 +11,38 @@
       <li><a class="headerButton" href="./experience.html">Projects and Experience</a></li>
       <li><a class="headerButton" href="./contact.html">Contact</a></li>
     </ul>
-    <h1 id="pageTitle" >About Norberto Martinez</h1>
-    <p>
-        My name is Norberto Martinez and I am from North Texas.
-        I am 22, and I am currently sudying Computer Science at BYU.
-        I am married to Savannah Jewel Martinez and we have a beautiful
-        cat named Dexter. I love to watch Dragon ball Z nad my favorite
-        sports are soccer and boxing.
-    </p>
-    <hr/>
-    <h2 id="pageSubTitle">This is Dexter</h2>
-    <img src='./images/dexter.png'/>
+    <div class='photo-grid-container'>
+      <div class='photo-grid'>
+        <div class='photo-grid-item first-item'>
+          <img class="image" src='images/one.JPG'/>
+        </div>
+        <div class='photo-grid-item'>
+          <img class="image" src='images/two.JPG'/>
+        </div>
+        <div class='photo-grid-item'>
+          <img class="image" src='images/three.JPG'/>
+        </div>
+        <div class='photo-grid-item'>
+          <img class="image" src='images/four.JPG'/>
+        </div>
+        <div class='photo-grid-item last-item'>
+          <img class="image" src='images/five.JPG'/>
+        </div>
+        
+      </div>
+    </div>    
+    <div class="infoContainer">
+      <h1 id="pageTitle" >About Norberto Martinez</h1>
+      <p>
+          My name is Norberto Martinez and I am from North Texas.
+          I am 22, and I am currently sudying Computer Science at BYU.
+          I am married to Savannah Jewel Martinez and we have a beautiful
+          cat named Dexter. I love to watch Dragon ball Z and my favorite
+          sports are soccer and boxing.
+      </p>
+      <hr/>
+      <h2 id="pageSubTitle">This is Dexter</h2>
+      <img class="dexterImage" src='./images/dexter.png'/>
+    </div>
   </body>
 </html>
